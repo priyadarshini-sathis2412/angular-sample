@@ -1,0 +1,22 @@
+<div  class="container mt-5 d-flex justify-content-center" >
+
+<div style="cursor: pointer;" (click)="goBack()">  
+  <i class="fa-solid fa-arrow-left"></i>
+</div>
+  <div class="card profile-card" style="top: 48px;">
+    <img [src]="profile.image" class="card-img-top" alt="Profile Image">
+    <div class="card-body">
+      <h5 class="card-title">{{ profile.name }}, {{ profile.age }} years</h5>
+      <p class="card-text">
+        <strong>Height:</strong> {{ profile.height }}<br>
+        <strong>Profession:</strong> {{ profile.profession }}<br>
+        <strong>Religion:</strong> {{ profile.religion }}<br>
+        <strong>Location:</strong> {{ profile.location }}
+      </p>
+      <div class="btn-group mt-3">
+        <button class="btn btn-outline-primary">Shortlist ❤️</button>
+        <button class="btn btn-primary">Like Her? ✅</button>
+      </div>
+    </div>
+  </div>
+</div>
